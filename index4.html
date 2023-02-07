@@ -139,6 +139,47 @@
             z-index: 2;
         }
 
+        .hq {
+            text-align: center;
+            color: brown;
+            font-weight: normal;
+            font-size: 20px;
+            position: relative;
+            z-index: 5;
+            right: -40%;
+            bottom: -697px;
+            animation: animation 5s infinite linear;
+        }
+
+        @keyframes animation {
+            0% {
+                color: brown;
+            }
+
+            20% {
+                color: #8e44ad;
+            }
+
+            50% {
+                color: #2980b9;
+            }
+
+            80% {
+                color: yellowgreen;
+            }
+
+            100% {
+                color: cadetblue;
+            }
+        }
+
+        @media (max-width:767px) {
+            .hq {
+                right: -1%;
+                bottom: -755px;
+            }
+        }
+
         .inputs .text_lab1 input:valid~span:before,
         .inputs .text_lab2 input:valid~span:before {
             width: 90%;
@@ -333,6 +374,10 @@
 </head>
 
 <body>
+
+    <div class="hq">
+        <h4>Created By Sefoo333</h4>
+    </div>
     <div class="pa">
 
         <div class="cen2">
@@ -343,7 +388,7 @@
 
         <!-- login 2 -->
         <div class="center">
-            <img src="images/3237472.png" class="image" alt="" style="width: 20%;
+            <img src="images/3237472.png" class="image" alt="" style="width: 19%;
             position: relative;
             left: 39%;
             top: -11%;
